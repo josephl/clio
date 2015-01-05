@@ -1,12 +1,15 @@
-# Simplest-case command-line input/output
+Clio
+====
+
+Simplest-case command-line input/output.
 
 This is a Python function decorator that applies an input file object and an
 output file object as arguments to the decorated function. It determines this
 based on STDIN or the presence of command-line arguments.
 
-CLIO was created when I grew tired of writing I/O boilerplate code for simple
+Clio was created when I grew tired of writing I/O boilerplate code for simple
 data cleaning scripts in Python and felt that the excellent
-[argparse](https://docs.python.org/3/library/argparse.html) package was
+[argparse](https://docs.python.org/3/library/argparse.html) library was
 overkill.
 
 ### Input
