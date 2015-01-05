@@ -18,3 +18,22 @@ If a path argument to an output file is specified (as either the first argument
 if `INPUT` is `STDIN` or the second argument if a path to the input file is
 specified), then the output file is set to the path.
 Otherwise, output is set to `STDOUT`.
+
+### Examples
+`script.py:`
+```python
+@clio
+def main(filein, fileout):
+    """Write input to output."""
+    fileout.write(filein.read())
+
+
+if __name__ == '__main__':
+    main()
+```
+
+Input: `STDIN`, Output: `STDOUT`
+```
+$ echo 'foo' | python script.py
+foo
+```
