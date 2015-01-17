@@ -11,6 +11,11 @@ data cleaning scripts in Python and felt that the excellent
 [argparse](https://docs.python.org/3/library/argparse.html) library was
 mildly overkill.
 
+#### Installation
+```
+$ pip install simplio
+```
+
 
 ## Usage
 
