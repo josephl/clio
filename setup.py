@@ -15,4 +15,5 @@ setup(
     author_email='joe.lee.three.thousand@gmail.com',
     license='MIT',
     keywords='input output file io',
+    packages=['simplio'],
 )
