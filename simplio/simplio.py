@@ -1,7 +1,7 @@
 from sys import argv, stdin, stdout
 
 
-def clio(func):
+def simplio(func):
     """
     Simple command-line IO.
     Function decorator that passes input, output file objects as arguments.
