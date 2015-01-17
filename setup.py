@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='simplio',
-    version='0.1',
+    version='0.1.1',
     description='Simplest-case command-line input/output',
     long_description=(
         'Simplio is a Python function decorator that applies an input file '
@@ -15,4 +15,5 @@ setup(
     author_email='joe.lee.three.thousand@gmail.com',
     license='MIT',
     keywords='input output file io',
+    packages=['simplio'],
 )
