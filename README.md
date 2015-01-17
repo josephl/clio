@@ -25,9 +25,12 @@ Otherwise, output is set to `STDOUT`.
 ### Examples
 `script.py:`
 ```python
+from simplio import simplio
+
+
 @simplio
 def main(filein, fileout):
-    """Write input to output."""
+    """Trivially write input to output."""
     fileout.write(filein.read())
 
 
@@ -39,4 +42,37 @@ Input: `STDIN`, Output: `STDOUT`
 ```
 $ echo 'foo' | python script.py
 foo
+```
+
+`foo.txt:`
+```
+FOO,
+Foo,
+foo.
+```
+
+Input: `foo.txt`, Output: `STDOUT`
+```
+$ python script.py foo.py
+FOO,
+Foo,
+foo.
+```
+
+Input: `STDIN`, Output: `bar.txt`
+```
+$ python script.py bar.txt < foo.txt
+$ cat bar.txt
+FOO,
+Foo,
+foo.
+```
+
+Input: `foo.txt`, Output: `bar.txt`
+```
+$ python script.py foo.txt bar.txt
+$ cat bar.txt
+FOO,
+Foo,
+foo.
 ```
